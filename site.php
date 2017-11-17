@@ -3,6 +3,7 @@
 use Oeste\Page;
 use Oeste\Model\Product;
 use Oeste\Model\Category;
+use Oeste\Model\Cart;
 
 $app->get('/', function() {
     
@@ -61,6 +62,16 @@ $app->get("/products/:desurl", function ($desurl){
     
 });
 
+
+$app->get('/cart', function (){
+    
+    $cart = Cart::getFromSession();
+
+    $page = new Page();
+    
+    $page->setTpl("cart");
+    
+});
 
 
 ?>
