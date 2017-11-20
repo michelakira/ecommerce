@@ -239,11 +239,11 @@ class User extends Model {
 
 				if ($inadmin === true) {
 					
-					$link = "http://www.zaneide.croches.com.br/admin/forgot/reset?code=$code";
+					$link = "http://www.oestecommerce.com.br/admin/forgot/reset?code=$code";
 
 				} else {
 
-					$link = "http://www.zaneide.croches.com.br/forgot/reset?code=$code";
+					$link = "http://www.oestecommerce.com.br/forgot/reset?code=$code";
 
 				}
 
